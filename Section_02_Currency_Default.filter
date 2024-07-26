@@ -1,0 +1,267 @@
+###################################################################################
+######################### Section 2 - Currency & 6L ###############################
+###################################################################################
+#have to put this here because otherwise tainted catalyst will go under the Tainted currency filter
+#which might actually be fine! and I could just delete this shit...
+#Show
+#        BaseType "Tainted Catalyst"
+#        Class Currency
+#        SetBackgroundColor 40 40 40
+#        SetBorderColor 0 200 0
+#        SetTextColor 240 240 200
+#        SetFontSize 45
+#        PlayAlertSound 3 100
+#        PlayEffect Grey Temp
+#        MinimapIcon 1 Green Pentagon
+
+Show
+        BaseType "Gold"
+        Class Gold
+        SetFontSize 32
+        DisableDropSound
+        SetBorderColor 170 158 130
+
+#Tainted Currencies
+Show
+        BaseType "Tainted"
+        Class Currency
+        SetBackgroundColor 80 0 0 170
+        SetBorderColor 255 130 0
+        SetTextColor 255 130 10
+        SetFontSize 45
+        PlayAlertSound 15 100
+        MinimapIcon 1 Orange Circle
+        PlayEffect Brown
+        DisableDropSound
+
+#Higher value currency blocks
+Show
+        BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Imprint" "Awakener's Orb" "Orb of Dominance" "Sacred Orb" "Fracturing Orb"
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 0 0
+        SetFontSize 45
+        PlayAlertSound 6 150
+        CustomAlertSoundOptional "gachiA.mp3" 100
+        MinimapIcon 0 White Diamond
+        PlayEffect White
+        DisableDropSound
+        
+#add specific blocks for the new implicits currency
+Show
+        BaseType "Eldritch Ember"
+        SetTextColor 240 20 40
+        SetBorderColor 250 250 250
+        SetBackgroundColor 40 40 40 200
+        PlayAlertSound 2 120
+        SetFontSize 45
+        MinimapIcon 1 Red Diamond
+        DisableDropSound
+        
+Show
+        BaseType "Eldritch Ichor"
+        SetBackgroundColor 0 170 200 180
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        PlayAlertSound 2 120
+        SetFontSize 45
+        MinimapIcon 1 Blue Diamond
+        DisableDropSound
+
+Show
+        BaseType "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment"
+        SetBackgroundColor 240 0 200
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 10 120
+        SetFontSize 45
+        MinimapIcon 1 Pink Circle
+        PlayEffect Pink
+        DisableDropSound
+
+Show
+        BaseType "Exalted Orb" "Orb of Annulment" "Ancient Orb" "Maven's Chisel"
+        SetBackgroundColor 240 0 200
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 10 120
+        SetFontSize 45
+        MinimapIcon 1 Pink Circle
+        PlayEffect Pink
+        DisableDropSound
+
+#moved ex below eldritch as it was bugging out the elderitch ex lmfao
+Show
+        BaseType "Divine Orb" "Mirror Shard" "Orb of Conflict" "Fracturing Shard"
+        SetBackgroundColor 250 0 125
+        SetBorderColor 255 255 255
+        SetTextColor 10 5 0
+        PlayAlertSound 6 170
+        SetFontSize 45
+        MinimapIcon 0 Red Circle
+        PlayEffect Red
+        DisableDropSound
+
+Show
+        BaseType "Harbinger's Orb" "Exalted Shard" "Cartographer's Seal" "Unshaping Orb" "Compass" "Sextant"
+        SetBackgroundColor 200 0 250
+#       SetBackgroundColor 150 0 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 2 150
+        MinimapIcon 2 Purple Circle
+        PlayEffect Purple
+        DisableDropSound
+        
+#same block, just lower volume for unmakings/reports as they drop more often
+Show
+        BaseType "Scouting Report" "Orb of Unmaking" "Orb of Horizons"
+        SetBackgroundColor 200 0 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 2 100
+        MinimapIcon 2 Purple Circle
+        PlayEffect Purple
+        DisableDropSound
+
+Show
+        BaseType "Veiled Orb" "Enkindling Orb" "Instilling Orb" "Oil Extractor" "Regal Orb"
+        SetBackgroundColor 0 225 125
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 3 100
+        MinimapIcon 2 Green Circle
+        PlayEffect Green Temp
+        DisableDropSound
+
+Show
+        BaseType "Chaos Orb" "Gemcutter's Prism" "Orb of Scouring"
+        SetBackgroundColor 0 185 185
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 3 125
+        MinimapIcon 2 Cyan Circle
+        DisableDropSound
+
+Show
+        BaseType "Orb of Alchemy" "Orb of Binding" "Orb of Regret"
+#       SetBackgroundColor 0 200 150
+        SetBackgroundColor 0 180 130
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 3 100
+        MinimapIcon 2 Green Circle
+        DisableDropSound
+
+Show
+        BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Cartographer's Chisel"
+#       SetBackgroundColor 0 175 0
+        SetBackgroundColor 0 165 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 3 100
+        MinimapIcon 2 Green Circle
+        DisableDropSound
+
+#Shards
+Show
+        BaseType "Annulment Shard" "Ancient Shard" "Harbinger's Shard"
+        SetBackgroundColor 0 150 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        MinimapIcon 2 Blue Circle
+        PlayEffect Blue Temp
+        
+Show
+        BaseType "Horizon Shard" "Chaos Shard" "Regal Shard" 
+        SetBorderColor 0 150 250
+        SetFontSize 40
+        MinimapIcon 2 Blue Circle
+        PlayEffect Blue Temp
+
+#Show
+#       BaseType "Chaos Shard" "Regal Shard"
+#       SetBorderColor 0 200 200
+#       SetFontSize 40
+
+Hide
+        BaseType "Binding Shard" "Alchemy Shard"
+        SetBorderColor 170 158 130
+        SetFontSize 20
+        DisableDropSound
+
+Show #last minute change but i think this shit is worth showing on low tier maps considering harbies are back on the menu
+        BaseType "Binding Shard" "Alchemy Shard"
+        SetBorderColor 170 158 130
+        AreaLevel < 77
+        SetFontSize 40
+
+Hide #dogshit currency lol
+        BaseType "Engineer's Shard" "Engineer's Orb"
+        SetBorderColor 170 158 130
+        SetFontSize 20
+        DisableDropSound
+
+#Minor Currency, Scrolls, Etc
+Show
+        BaseType "Chromatic Orb" "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Chance"
+        SetBackgroundColor 170 158 130
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+
+#changed so that only stacks are shown, probably should comment those lines out on league start
+#can change to a higher number once 1k+ scrolls to just pick up sets
+#of 6-7 since those drop often
+
+Show
+        BaseType "Portal Scroll"
+        SetFontSize 40
+        AreaLevel >= 78
+        SetTextColor 100 150 200
+        StackSize >= 5
+
+Show
+        BaseType "Portal Scroll"
+        SetFontSize 40
+        AreaLevel < 78
+        AreaLevel >= 72
+        SetTextColor 100 150 200
+        StackSize >= 3
+
+Show
+        BaseType "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Blacksmith's Whetstone"
+        SetFontSize 40
+        AreaLevel >= 78
+        StackSize >= 6
+
+Show
+        BaseType "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Blacksmith's Whetstone"
+        SetFontSize 40
+        AreaLevel < 78
+        AreaLevel >= 72
+        StackSize >= 3
+        
+Show
+        BaseType "Scroll of Wisdom"
+        SetFontSize 40
+        AreaLevel <= 78 #raised w/how atlas currently works you only run t16 maps once progression is over
+        StackSize >= 4
+
+Show
+        BaseType "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Blacksmith's Whetstone" "Scroll of Wisdom" "Portal Scroll"
+        AreaLevel < 72
+        SetFontSize 32
+
+Hide
+        BaseType "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Blacksmith's Whetstone" "Scroll of Wisdom" "Portal Scroll"
+        AreaLevel >= 72
+        SetFontSize 25
+        DisableDropSound

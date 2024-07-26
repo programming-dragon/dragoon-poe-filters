@@ -1,0 +1,392 @@
+###################################################################################
+############### Section 11A - Archetype Focused Rare Highlighting #################
+###################################################################################
+#Advanced filtering section that highlights top bases based on archetype instead of a little of everything. Meant to be used as a supplement to 11B in General and a replacement in Strict/Uber. The intention is that you only enable the blocks relevant to your archetype and then delete 11B entirely.
+#These blocks are very restrictive and only show the top ~4 bases for each type with red borders. This entire section is always disabled by default.
+
+#Energy Shield
+#Show
+#       BaseType "Sorcerer Gloves" "Sorcerer Boots" "Hubris Circlet" "Titanium Spirit Shield" "Vaal Regalia" "Sadist Garb"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Arcanist Gloves" "Arcanist Slippers"
+#       Rarity Rare
+#       SetBorderColor 150 0 255
+#       SetFontSize 38
+#Show
+#       BaseType "Moonstone Ring" "Unset Ring" "Citrine Amulet"
+#       Rarity Rare
+#       SetBackgroundColor 50 0 0
+#       SetBorderColor 225 0 0
+#       SetFontSize 42
+
+#Armor
+#Show
+#       BaseType "Titan Gauntlets" "Vaal Gauntlets" "Goliath Gauntlets" "Ancient Gauntlets"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Titan Greaves" "Vaal Greaves" "Goliath Greaves" "Ancient Greaves"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Eternal Burgonet" "Royal Burgonet" "Ezomyte Burgonet" "Samnite Helmet"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Coral Ring" "Leather Belt" "Turquoise Amulet"
+#       Rarity Rare
+#       SetBackgroundColor 50 0 0
+#       SetBorderColor 225 0 0
+#       SetFontSize 42
+
+#Evasion
+#Show
+#       BaseType "Slink Gloves" "Stealth Gloves" "Shagreen Gloves" "Sharkskin Gloves"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Slink Boots" "Stealth Boots" "Shagreen Boots" "Sharkskin Boots"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Ursine Pelt"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Coral Ring" "Leather Belt" "Agate Amulet"
+#       Rarity Rare
+#       SetBackgroundColor 50 0 0
+#       SetBorderColor 225 0 0
+#       SetFontSize 42
+
+#Shields
+#Show
+#       BaseType "Ezomyte Tower Shield" "Bronze Tower Shield" "Copper Tower Shield"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Fossilised Spirit Shield" "Ivory Spirit Shield" "Bone Spirit Shield"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Archon Kite Shield" "Angelic Kite Shield" "Ceremonial Kite Shield"
+#       Rarity Rare
+#       SetBorderColor 150 0 255
+#       SetFontSize 38
+
+#Life Chests (usually not needed b/c of tabula into high level crafted)
+#Show
+#       BaseType "Astral Plate" "Assassin's Garb" "Lacquered Garb"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+
+#Hybrid Blocks - meant as supplemental for socket color issues more than anything else (although between jeweller trick, Vorici, and now Harvest this is becoming less of an issue each league and this is included only for completeness sake).  updated to show top 4 of each base listed in descending order for easy deletion
+#AR/EV
+#Show
+#       BaseType "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Serpentscale Gauntlets" 
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots" "Serpentscale Boots"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Nightmare Bascinet" "Pig-faced Bascinet" "Fluted Bascinet" "Lacquered Helmet"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#AR/ES
+#Show
+#       BaseType "Crusader Gloves" "Legion Gloves" "Soldier Gloves" "Zealot Gloves"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Crusader Boots" "Legion Boots" "Soldier Boots" "Zealot Boots"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Praetor Crown" "Prophet Crown" "Magistrate Crown" "Great Crown"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#EV/ES
+#Show
+#       BaseType "Murder Mitts" "Assassin's Mitts" "Carnal Mitts" "Ambush Mitts"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Murder Boots" "Assassin's Boots" "Carnal Boots" "Ambush Boots"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Deicide Mask" "Vaal Mask" "Harlequin Mask" "Regicide Mask"
+#       Rarity Rare
+#       SetBorderColor 225 0 0
+#       SetFontSize 40
+
+#SSF Item Class Droplevel Override Blocks - A quick option to enable in SSF if you just need a specific slot. i.e. if the only slots you need is boots, enable the Boots section to show all boots over droplevel 50. 
+#Always disabled (NOT HIDDEN) by default as these are very specific and VERY spammy if all are enabled. Remove or lower the droplevel threshold if you want to see more low level bases.
+#Show
+#       Class "Helmet"
+#       Rarity Rare
+#       DropLevel >= 50
+#       SetBorderColor 75 150 255
+#       SetFontSize 36
+#Show
+#       Class "Gloves"
+#       Rarity Rare
+#       DropLevel >= 50
+#       SetBorderColor 75 150 255
+#       SetFontSize 36
+#Show
+#       Class "Boots"
+#       Rarity Rare
+#       DropLevel >= 50
+#       SetBorderColor 75 150 255
+#       SetFontSize 36
+#Show
+#       Class "Wand" "Sceptre"
+#       Rarity Rare
+#       DropLevel >= 50
+#       SetBorderColor 150 200 250
+#       SetFontSize 36
+#Show
+#       Class "One Hand Axe" "Claw" "Dagger" "Rune Dagger"
+#       Rarity Rare
+#       DropLevel >= 60
+#       SetBorderColor 128 0 0
+#       SetFontSize 36
+#Show
+#       Class "Two Hand Axe" "Warstaves"
+#       Rarity Rare
+#       DropLevel >= 60
+#       SetBorderColor 128 0 0
+#       SetFontSize 36
+#Show
+#       Class "Bow"
+#       Rarity Rare
+#       DropLevel >= 60
+#       SetBorderColor 125 200 40
+#       SetFontSize 36
+
+###################################################################################
+#################### Section 11B - Rare Armor Highlighting ########################
+###################################################################################
+#violet borders top rares
+Show
+        BaseType "Murder Boots" "Deicide Mask" "Murder Mitts" "Sadist Garb" #"Full Dragonscale" "Dragonscale Boots" "Dragonscale Gauntlets" "Pig-Faced Bascinet" "Slink Gloves" "Slink Boots" "Lion Pelt" "
+        Rarity Rare
+        AreaLevel < 82
+        SetBorderColor 150 0 255
+        SetFontSize 36
+
+Show
+        BaseType "Imbued Wand" "Profane Wand" "Prophecy Wand" "Supreme Spiked Shield" #"Cardinal Round Shield"
+        AreaLevel < 82
+        Rarity Rare
+        SetBorderColor 150 0 255
+        SetFontSize 36
+
+#blue borders 2nd tier rares
+#Show
+#       BaseType "Astral Plate" "Vaal Regalia" "Archon Kite Shield" "Angelic Kite Shield" "Ceremonial Kite Shield" "Hubris Circlet" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Sorcerer Gloves" "Sorcerer Boots" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots"
+#       Rarity Rare
+#       SetBorderColor 75 150 255
+#       SetFontSize 32
+#Show
+#       BaseType "Assassin's Garb" "Sadist Garb" "Triumphant Lamellar" "Titanium Spirit Shield" "Ezomyte Tower Shield" "Bronze Tower Shield" "Copper Tower Shield"  "Legion Boots" "Crusader Gloves"
+#       Rarity Rare
+#       SetBorderColor 75 150 255
+        
+#Second-Tier 2x2 highlighting
+#blue border exceptions (only applies in strict version)
+#Show
+#       BaseType "Arcanist Gloves" "Hydrascale" "Vaal Greaves" "Vaal Gauntlets" "Stealth Boots" "Stealth Gloves" "Crusader Gloves" "Murder Mitts"
+#       Rarity Rare
+#       Height = 2
+#       Width = 2
+#       SetBorderColor 75 150 255
+#       SetFontSize 36
+#Expanded 2nd tier gloves, boots, shields due to meta demand
+#Show
+#       BaseType "Goliath Gauntlets" "Wyrmscale Gauntlets" "Ancient Gauntlets" "Serpentscale Gauntlets" "Shagreen Gloves"
+#       Rarity Rare
+#       Height = 2
+#       Width = 2
+#       SetBorderColor 75 150 255
+#       SetFontSize 32
+#Show
+#       BaseType "Legion Boots" "Shagreen Boots" "Goliath Greaves" "Soldier Boots" "Wyrmscale Boots" "Ancient Greaves" "Serpentscale Boots"
+#       Rarity Rare
+#       Height = 2
+#       Width = 2
+#       SetBorderColor 75 150 255
+#       SetFontSize 32
+#experimental: abolishing itemlevel based filtering in favor of better base filtering, as ilvl distinction applies only to 73-74 maps
+#new: blue borders on all droplevel 60+ boots
+#Show
+#       Class "Boots"
+#       Rarity Rare
+#       DropLevel >= 60
+#       SetBorderColor 75 150 255
+#       SetFontSize 36
+        
+###################################################################################
+#################### Section 11C - Rare Weapon Highlighting #######################
+###################################################################################
+#light blue borders on caster weapons
+#Show
+#       BaseType "Opal Sceptre" "Void Sceptre" #"Profane Wand"
+#       Rarity Rare
+#       SetBorderColor 150 200 250
+#       SetFontSize 40
+
+#Show
+#       BaseType "Karui Sceptre"
+#       Rarity Rare
+#       AreaLevel < 78
+#       SetBorderColor 150 200 250
+#       SetFontSize 40
+
+#Show
+#       BaseType "Opal Wand" "Demon's Horn" "Tornado Wand"
+#       Rarity Rare
+#       SetBorderColor 150 200 250
+#       SetFontSize 40
+
+#Show
+#       BaseType "Harmonic Spirit Shield" "Chiming Spirit Shield" "Jingling Spirit Shield"
+#       Rarity Rare
+#       SetBorderColor 75 100 125
+#       SetFontSize 40
+#Show
+#       BaseType "Champion Kite Shield" "Archon Kite Shield"
+#       Rarity Rare
+#       AreaLevel < 82
+#       SetBorderColor 75 100 125
+#       SetFontSize 40
+#Show
+#       BaseType "Titanium Spirit Shield"
+#       Rarity Rare
+#       SetBorderColor 75 100 125
+#       SetFontSize 40
+
+#lime green on ranged weapons
+#Show
+#       BaseType "Citadel Bow" "Thicket Bow"
+#       Rarity Rare
+#       SetBorderColor 125 200 40
+#       SetFontSize 40
+#Show
+#       BaseType "Imperial Bow" "Spine Bow" "Assassin Bow"
+#       Rarity Rare
+#       SetBorderColor 125 200 40
+#       SetFontSize 40
+
+#Show
+#       BaseType "Heavy Arrow" "Broadhead Arrow" "Primal Arrow" "Feathered Arrow" "Penetrating Arrow"
+#       Rarity Rare
+#       Class "Quiver"
+#       SetBorderColor 125 200 40
+#       SetFontSize 40
+Show
+       BaseType "Imbued Wand" "Profane Wand" "Prophecy Wand" "Supreme Spiked Shield" "Murder Boots" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Ancient Mask" "Deicide Mask" "Murder Mitts" ##"Crusader Buckler"
+       Rarity Rare
+       SetBorderColor 125 200 40
+       SetFontSize 40
+#maroon on melee weapons
+#Show
+#       BaseType "Despot Axe" "Ezomyte Axe" #"Siege Axe" "Vaal Axe" "Karui Chopper" "Royal Axe"
+#       Rarity Rare
+#       SetBorderColor 128 0 0
+#       SetFontSize 40
+#Show
+#       BaseType "Colossal Tower Shield" "Ezomyte Towere Shield"
+#       Rarity Rare
+#       SetBorderColor 150 200 250
+#       SetFontSize 40
+#Show
+#       BaseType "Copper Kris" "Golden Kris" "Platinum Kris"
+#       Rarity Rare
+#       SetBorderColor 150 200 250
+#       SetFontSize 40
+#Show
+#       BaseType "Convoking" "Convening" "Calling"
+#       Class "Wand"
+#       SetFontSize 34
+#       Rarity Rare
+#       SetBorderColor 210 0 0
+#Show
+#       BaseType "Fossilised Spirit Shield" "Ivory Spirit Shield" "Bone Spirit Shield"
+#       SetFontSize 40
+#       Rarity Rare
+#       SetBorderColor 210 0 0   
+###################################################################################
+################## Section 11D - Rare Jewellery Highlighting ######################
+###################################################################################
+#Jewellery - Nested purple for best basetypes, nested blue for all other basetypes
+#reminder that 84+ rare jewellery highlighting is covered in section 10, this is for sub-84
+#bigger font sizes and purple highlighting at low levels - next 3 blocks in General Filter Only
+Show
+        ItemLevel <= 25
+        BaseType "Coral Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Citrine Amulet" "Agate Amulet" "Turquoise Amulet" "Leather Belt" "Heavy Belt" "Rustic Sash" "Iron Ring"
+        Rarity Rare
+        SetBackgroundColor 50 0 100
+        SetBorderColor 175 75 255
+        SetFontSize 45
+        MinimapIcon 1 Yellow Cross
+        PlayAlertSound 16 110
+Show
+        ItemLevel <= 67
+        BaseType "Coral Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Citrine Amulet" "Agate Amulet" "Turquoise Amulet" "Leather Belt" "Heavy Belt" "Amethyst Ring"
+        Rarity Rare
+        SetBackgroundColor 50 0 100
+        SetBorderColor 175 75 255
+        SetFontSize 45
+        MinimapIcon 1 Yellow Cross
+        PlayAlertSound 16 110
+Show
+        ItemLevel <= 47
+#       BaseType "Iron Ring" "Paua Ring" "Gold Ring" "Moonstone Ring" "Amethyst Ring" "Rustic Sash" "Chain Belt" "Studded Belt" "Cloth Belt" "Paua Amulet" "Coral Amulet" "Gold Amulet" "Onyx Amulet"
+        BaseType " Ring" "Amulet" "Belt" "Rustic Sash"
+        Height = 1
+        Rarity Rare
+        SetBackgroundColor 0 50 100
+        SetBorderColor 75 150 255
+        SetFontSize 40
+
+Show
+        BaseType "Coral Ring" "Leather Belt" "Amethyst Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Unset Ring" "Prismatic Ring" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Citrine Amulet" "Agate Amulet" "Turquoise Amulet" "Onyx Amulet"
+        Rarity Rare
+        SetBackgroundColor 50 0 100
+        SetBorderColor 175 75 255
+        SetFontSize 38
+#t2 bases - blue
+Show
+#       BaseType "Iron Ring" "Paua Ring" "Gold Ring" "Moonstone Ring" "Diamond Ring" "Rustic Sash" "Chain Belt" "Heavy Belt" "Studded Belt" "Cloth Belt" "Paua Amulet" "Coral Amulet" "Gold Amulet" "Bone Ring"
+        BaseType " Ring" "Amulet" "Belt" "Rustic Sash"
+        Height = 1
+        Rarity Rare
+        AreaLevel < 82
+        SetBackgroundColor 0 50 100
+        SetBorderColor 75 150 255
+        SetFontSize 36
+      

@@ -1,0 +1,35 @@
+###################################################################################
+########################### Section 16 - Terminus #################################
+###################################################################################
+Hide
+        BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Scroll of Wisdom"
+        DisableDropSound
+        
+#conditional hide block(s) - these only kick in if sections are deleted. if these blocks were not present then if blocks were deleted then their respective classes would show up as unknown (with the black highlight) instead of being hidden. therefore this is necessary to preserve modularity of filter
+#intentionally kept minimal to prevent people from ducking themselves with stupid edits. if you want to hide an item class that normally wouldn't ever be hidden (say, fossils) you need to add the class to this block or simply hide the blocks instead of deleting them
+Hide
+        BaseType "Splinter"
+
+#"Global" hide blocks targetting all remaining known item classes
+Hide
+        Class "Body Armour" "Gloves" "Boots" "Helm" "Sword" "Axe" "Mace" "Claw" "Dagger" "Wand" "Sceptre" "Shield" "Bow" "Quiver" "Ring" "Amulet" "Belt" "Staves" "Warstaves" "Flasks"
+        ItemLevel <= 67
+        SetFontSize 25
+        SetBackgroundColor 0 0 0 200
+        DisableDropSound
+Hide
+        Class "Body Armour" "Gloves" "Boots" "Helm" "Sword" "Axe" "Mace" "Claw" "Dagger" "Wand" "Sceptre" "Shield" "Bow" "Quiver" "Ring" "Amulet" "Belt" "Staves" "Warstaves" "Flasks"
+        SetFontSize 18
+        SetBackgroundColor 0 0 0 200
+        DisableDropSound
+
+#Emergency fall-through block. Catches any item class not recongized by the filter and shows it with an all black highlight and icon. If this is ever visible either you ducked up, I ducked up, or GGG ducked up. Check the item filter thread for updates and redownload if you've made edits.
+Show
+        SetBackgroundColor 0 0 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 11 200
+        MinimapIcon 2 Grey UpsideDownHouse
+        PlayEffect Grey
+###################################################################################

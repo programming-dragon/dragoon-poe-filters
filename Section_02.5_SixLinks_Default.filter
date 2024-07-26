@@ -1,0 +1,90 @@
+###################################################################################
+################### Section 2.5 - Six Links & Assorted similar items #########################
+###################################################################################
+#6L Blocks - located up here due to code priority issues. 5L and 6S blocks are in the Sockets section (7)
+#corrupted six link catcher
+Show
+        LinkedSockets = 6
+        Corrupted True
+#       SetBackgroundColor 190 0 240
+        SetBackgroundColor 240 0 200
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        PlayAlertSound 3 120
+        SetFontSize 40
+        MinimapIcon 1 Pink Pentagon
+        PlayEffect Pink
+#tabula exception
+Show
+        LinkedSockets = 6
+        Rarity Unique
+        BaseType "Simple Robe"
+        SetBackgroundColor 0 200 200
+#       SetBackgroundColor 240 0 200
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        PlayAlertSound 3 120
+        SetFontSize 40
+        MinimapIcon 1 Red Pentagon
+        PlayEffect Cyan
+#unique exception
+Show
+        LinkedSockets = 6
+        Rarity Unique
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 125 0
+        PlayAlertSound 6 110
+        SetFontSize 40
+        MinimapIcon 1 Orange Pentagon
+        PlayEffect Orange
+#white bg for high ilvl high droplevel 6L's
+Show
+        LinkedSockets = 6
+        DropLevel >= 50
+        ItemLevel >= 80
+        Class "Body Armour"
+        Corrupted False
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 200 200
+        PlayAlertSound 6 200
+        SetFontSize 45
+        MinimapIcon 1 White Pentagon
+        PlayEffect White
+#teal bg white border for all others (same as tabula highlight)
+Show
+        LinkedSockets = 6
+        Class "Body Armour"
+        Corrupted False
+        SetBackgroundColor 0 200 200
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        PlayAlertSound 3 120
+        SetFontSize 40
+        MinimapIcon 1 Red Pentagon
+        PlayEffect Cyan
+#only high droplevel weapons get white bg
+Show
+        LinkedSockets = 6
+        Class "Bow" "Axe" "Sword" "Mace" "Staves"
+        ItemLevel >= 64
+        Corrupted False
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 125 0 0
+        PlayAlertSound 6 90
+        SetFontSize 40
+        MinimapIcon 1 Brown Pentagon
+        PlayEffect Brown
+#catchall uses same highlighting as corrupted 6L - "divine" style highlihting cause that's usually what it's worth
+Show
+        LinkedSockets = 6
+#       SetBackgroundColor 190 0 240
+        SetBackgroundColor 0 200 200
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        PlayAlertSound 3 120
+        SetFontSize 40
+        MinimapIcon 1 Brown Pentagon
+        PlayEffect Brown

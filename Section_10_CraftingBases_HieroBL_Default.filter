@@ -1,0 +1,380 @@
+###################################################################################
+########################### Section 10 - i84+ Filtering ###########################
+###################################################################################
+#Atlas Basetypes
+#Ultra Rare Top Ilvl Atlas Base Highlighting (offwhite)
+Show
+        BaseType "Vermillion Ring" "Stygian Vise" "Blue Pearl Amulet"
+        Rarity Normal Magic Rare
+        ItemLevel >= 86
+        SetBackgroundColor 65 0 65
+        SetBorderColor 250 250 250
+        SetFontSize 45
+        PlayAlertSound 13 150
+        MinimapIcon 0 Red Kite
+        PlayEffect Red
+Show
+        BaseType "Blue Pearl Amulet" "Vermillion Ring" "Stygian Vise"
+        Rarity Normal Magic Rare
+        ItemLevel >= 85
+        SetBackgroundColor 65 0 65
+        SetBorderColor 250 200 150
+        SetFontSize 45
+        PlayAlertSound 13 150
+        MinimapIcon 1 Purple Kite
+        PlayEffect Purple
+Show
+        BaseType "Blue Pearl Amulet" "Vermillion Ring" "Stygian Vise"
+        Rarity Normal Magic Rare
+        ItemLevel >= 84
+        SetBackgroundColor 65 0 65
+        SetBorderColor 200 150 0
+        SetFontSize 45
+        PlayAlertSound 13 150
+        MinimapIcon 1 Blue Kite
+        PlayEffect Blue
+Show 
+        BaseType "Blue Pearl Amulet" "Vermillion Ring" "Stygian Vise" "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring"
+        Rarity Normal Magic Rare
+        SetBackgroundColor 65 0 65
+        SetBorderColor 220 0 220
+        SetFontSize 36
+        
+#i85 perfect rolled two toneds are bis for rolling suppression on gear
+#Show
+#        BaseType "Two-Toned Boots"
+#        ItemLevel >= 85
+#        BaseDefencePercentile 100
+#        BaseArmour > 10
+#        BaseEvasion > 10
+#        SetBackgroundColor 75 0 75
+#        SetBorderColor 250 250 250
+#        SetFontSize 45
+#        PlayAlertSound 13 200
+#        MinimapIcon 0 Purple Kite
+#        PlayEffect Red
+        
+#also show any pair of i85+ two toneds cuz why not
+#Show
+#    BaseType "Two-Toned Boots"
+#        ItemLevel >= 85
+#        BaseArmour > 10
+#        BaseEvasion > 10
+#        SetBackgroundColor 75 0 75
+#        SetBorderColor 250 250 250
+#        SetFontSize 40
+#        PlayAlertSound 13 100
+
+
+#i86 Priority - Bases with consistently high (10c+) value even later into the league (tldr: shields) note: removed lacquered for now, need to check Synth econ to see if it should stay or not
+#wondering if its worth showing all the armour bases, they're neat for recombs but dogshit to roll otherwise
+Show
+        BaseType "Titanium Spirit Shield" "Ezomyte Tower Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Supreme Spiked Shield"
+        ItemLevel >= 86
+        BaseDefencePercentile 90
+        SetBorderColor 250 250 250
+        SetFontSize 40
+        PlayEffect White
+        MinimapIcon 2 White Triangle
+
+Show
+        BaseType "Titanium Spirit Shield" "Ezomyte Tower Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Supreme Spiked Shield"
+        ItemLevel >= 86
+        SetBorderColor 250 250 250
+        SetFontSize 32
+        PlayEffect White Temp
+
+Show
+        BaseType "Titanium Spirit Shield" "Ezomyte Tower Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Supreme Spiked Shield"
+        ItemLevel >= 85
+        BaseDefencePercentile 80
+        SetBorderColor 250 250 250
+        SetFontSize 32
+        PlayEffect White Temp
+        
+#Rare Jewellery 84+ Highlighting
+Show
+        BaseType "Coral Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Citrine Amulet" "Agate Amulet" "Turquoise Amulet" "Moonstone Ring" "Amethyst Ring" 
+        Rarity Rare
+        ItemLevel >= 86
+        SetBackgroundColor 50 0 100
+        SetBorderColor 250 200 175
+        SetFontSize 42
+Show
+        BaseType "Moonstone Ring" "Diamond Ring" "Heavy Belt" "Onyx Amulet" "Bone Ring"
+        Height = 1
+        Rarity Rare
+        ItemLevel >= 86
+        SetBackgroundColor 0 50 100
+        SetBorderColor 250 200 175
+        SetFontSize 40
+        DisableDropSound
+Show
+        BaseType "Coral Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Citrine Amulet" "Agate Amulet" "Turquoise Amulet" "Moonstone Ring" "Amethyst Ring"
+        Rarity Rare
+        ItemLevel >= 85
+        SetBackgroundColor 50 0 100
+        SetBorderColor 250 175 0
+        SetFontSize 40
+Show
+        BaseType "Moonstone Ring" "Diamond Ring" "Heavy Belt" "Onyx Amulet" "Bone Ring"
+        Height = 1
+        Rarity Rare
+        ItemLevel >= 85
+        SetBackgroundColor 0 50 100
+        SetBorderColor 250 175 0
+        SetFontSize 38
+
+Show
+        BaseType "Coral Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Citrine Amulet" "Agate Amulet" "Turquoise Amulet" "Moonstone Ring" "Amethyst Ring"
+        Rarity Rare
+        ItemLevel >= 84
+        SetBackgroundColor 50 0 100
+        SetBorderColor 200 135 0
+        SetFontSize 40
+Show
+        BaseType "Moonstone Ring" "Diamond Ring" "Heavy Belt" "Onyx Amulet" "Bone Ring"
+        Height = 1
+        Rarity Rare
+        ItemLevel >= 84
+        SetBackgroundColor 0 50 100
+        SetBorderColor 200 135 0
+        SetFontSize 36
+        DisableDropSound
+
+#Show
+#        BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Ezomyte Axe" "Despot Axe" "Piledriver" "Spine Bow" "Convoking Wand" "Imbued Wand" "Prophecy Wand" "Opal Sceptre" "Void Sceptre" "Feathered Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Full Dragonscale" "Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+#        ItemLevel >= 86
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 250 200 150
+#        SetFontSize 38
+#Show
+#        BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Ezomyte Axe" "Despot Axe" "Piledriver" "Spine Bow" "Convoking Wand" "Imbued Wand" "Prophecy Wand" "Opal Sceptre" "Void Sceptre" "Feathered Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Full Dragonscale" "Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+#        ItemLevel = 85
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 200 150 0
+#        SetFontSize 36
+#Show
+#        BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Ezomyte Axe" "Despot Axe" "Piledriver" "Spine Bow" "Convoking Wand" "Imbued Wand" "Prophecy Wand" "Opal Sceptre" "Void Sceptre" "Feathered Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Full Dragonscale" "Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+#        ItemLevel = 84
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 150 100 0
+#        SetFontSize 34
+
+###################################################################################
+######## pre-T16 suppression gearing block section 23 uuh yeah suppression ########
+###################################################################################
+# removing as there's no harvest anymore
+#show i77 suppress gear before reds
+#Show
+#        BaseType "Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets" 
+#        ItemLevel >= 76
+#        AreaLevel <= 78
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 250 200 150
+#        SetFontSize 32
+        
+#Show
+#        BaseType "Full Dragonscale" "Cardinal Round Shield" "Supreme Spiked Shield"
+#        ItemLevel >= 77
+#        AreaLevel <= 78
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 250 200 150
+#        SetFontSize 32
+
+###################################################################################
+################ SECTION I NEED MY BaseDefencePercentile TO BE HIGH whatever ######
+###################################################################################
+#shield section is handled at the beginning of this section.
+
+Show
+        BaseType "Sadist Garb" "Royal Plate" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" #"Full Dragonscale" "Saintly Chainmail" "Glorious Plate"
+        ItemLevel >= 86
+        BaseDefencePercentile 100
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 45
+        PlayAlertSound 3 125
+        PlayEffect White Temp
+        MinimapIcon 2 White Triangle
+
+#uncomment base defence percentile once you have gg gear, pointless to craft on shit bases
+Show
+        BaseType "Sadist Garb" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Royal Plate" #"Full Dragonscale" "Saintly Chainmail" "Sadist Garb" "Glorious Plate"
+        ItemLevel >= 86
+#       BaseDefencePercentile 90
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 40
+
+Show
+        BaseType "Amethyst Ring" "Imbued Wand" "Profane Wand" "Prophecy Wand"
+        ItemLevel >= 86
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 40
+        
+Show
+        BaseType "Imbued Wand" "Profane Wand" "Prophecy Wand"
+        ItemLevel >= 82
+        Rarity Rare
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 36
+
+Show
+       BaseType  "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets" "Jester Mask" "Ancient Mask" "Torturer's Mask" "Murder Boots" "Deicide Mask" "Phantom Mitts" "Phantom Boots" "Murder Mitts" #"Royal Burgonet" "Titan Gauntlets" "Titan Greaves" "Crusader Boots" "Crusader Gloves"
+       ItemLevel >= 85
+       BaseDefencePercentile 50
+       Corrupted False
+       Mirrored False
+       SetBorderColor 250 200 150
+       SetFontSize 34
+
+#highlight perfectly rolled supress gear
+Show
+        BaseType "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets" "Jester Mask" "Ancient Mask" "Torturer's Mask" "Murder Boots" "Phantom Mitts" "Deicide Mask" "Phantom Boots" "Murder Mitts" #"Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets" "Slink Gloves" "Slink Boots" "Lion Pelt"
+        ItemLevel >= 85
+        BaseDefencePercentile 100
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 40
+        PlayAlertSound 3 90
+        PlayEffect White Temp
+        MinimapIcon 2 White Triangle
+        
+#highlight supress gear bases, probably THE most important block in the entire filter considering current meta
+Show
+       BaseType "Giantslayer Helmet" "Leviathan Greaves" "Leviathan Gauntlets" "Murder Boots" "Deicide Mask" "Murder Mitts" "Phantom Mitts" "Jester Mask" "Phantom Boots" "Ancient Mask" "Torturer's Mask" #"Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets" "Slink Gloves" "Slink Boots" "Lion Pelt"
+       ItemLevel >= 85
+       BaseDefencePercentile 80
+       Corrupted False
+       Mirrored False
+       SetBorderColor 250 200 150
+       SetFontSize 40
+       PlayAlertSound 3 90
+
+Show
+       BaseType "Jester Mask" "Ancient Mask" "Torturer's Mask" "Phantom Mitts" "Murder Boots" "Phantom Boots" "Deicide Mask" "Murder Mitts" #"Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets" "Slink Gloves" "Slink Boots" "Lion Pelt"
+       ItemLevel >= 85
+       Rarity Rare
+       SetBorderColor 250 200 150
+       SetFontSize 38
+
+#Show
+#        BaseType "Royal Burgonet" "Titan Gauntlets" "Titan Greaves" "Crusader Boots" "Crusader Gloves" #"Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+#        ItemLevel >= 85
+#        BaseDefencePercentile 90
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 250 200 150
+#        SetFontSize 40
+
+# ES gear silent for now
+
+Show
+       BaseType "Amethyst Ring" "Sage Slippers" "Sage Gloves" "Warlock Boots" "Warlock Gloves"
+       ItemLevel >= 84
+       Corrupted False
+       Mirrored False
+       SetBorderColor 250 200 150
+       SetFontSize 40
+
+#highlight i86 perfect sorc boots, mostly to just sell these bases lol
+Show
+        BaseType "Sage Slippers"
+        ItemLevel >= 86
+        BaseDefencePercentile 100
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 40
+        PlayAlertSound 3 90
+        PlayEffect White Temp
+        MinimapIcon 2 White Triangle
+        
+Show
+        BaseType "Titanium Spirit Shield" "Lich's Circlet" "Necrotic Armour" "Sanguine Raiment" "Torturer Garb" "Twilight Regalia"
+        ItemLevel >= 86
+        BaseDefencePercentile 100
+        Corrupted False
+        Mirrored False
+        SetBorderColor 250 200 150
+        SetFontSize 45
+        PlayAlertSound 3 70
+
+Show
+        BaseType "Amethyst Ring" "Citrine Amulet" #"Saintly Chainmail" #"Despot Axe" "Imperial Claw" "Profane Wand" "Opal Wand" "Agate Amulet" "Void Sceptre" "Opal Sceptre"
+        ItemLevel >= 84
+        Corrupted False
+        Mirrored False
+        SetBorderColor 150 100 0
+        SetFontSize 40
+        
+Show
+        BaseType "Amethyst Ring" "Citrine Amulet" #"Saintly Chainmail" #"Despot Axe" "Imperial Claw" "Profane Wand" "Opal Wand" "Agate Amulet" "Void Sceptre" "Opal Sceptre"
+        AreaLevel <= 80
+        ItemLevel >= 74
+        Corrupted False
+        Mirrored False
+        SetBorderColor 150 100 0
+        SetFontSize 40
+        
+#sceptres
+#Show
+#        BaseType "Void Sceptre" "Opal Sceptre"
+#        ItemLevel >= 82
+#        Corrupted False
+#        Mirrored False
+#        SetBorderColor 150 100 0
+#        SetFontSize 40
+
+#"Despot Axe" "Imperial Claw" 
+
+#might hide Opals later on but i think its good for now
+#added shields for dmg on league start, definitely remove later, don't use if not suppress capped lol
+#Show
+#        BaseType "Chiming Spirit Shield" "Harmonic Spirit Shield"
+#        Rarity Rare
+#        AreaLevel < 78
+#        SetBorderColor 150 100 0
+#        SetFontSize 40
+        
+Show
+#        BaseType "Royal Burgonet" "Titan Gauntlets" "Titan Greaves" "Crusader Boots" "Crusader Gloves"
+        Class "Gloves" "Helm" "Boots" "Shields"
+        Rarity Rare
+        #BaseArmour > 77
+        #BaseArmour > 1
+        BaseEnergyShield > 20
+#show any eva base, just need to get suppress-capped, nothing else matters
+        BaseEvasion > 1
+        DropLevel > 50
+        AreaLevel < 78
+        SetBorderColor 150 150 75
+        SetFontSize 36
+
+Show
+        BaseType "Murder Boots" "Phantom Boots" "Phantom Mitts" "Torturer's Mask" "Ancient Mask" "Deicide Mask" "Murder Mitts" #"Crusader Boots" "Crusader Gloves" #"Royal Burgonet" "Titan Gauntlets" "Titan Greaves" 
+        Rarity Rare
+        AreaLevel < 78
+        SetBorderColor 150 150 75
+        SetFontSize 36
+
+#show weapons for my hiero
+#Show
+#        BaseType "Void Sceptre" "Opal Sceptre" "Saintly Chainmail"
+#        Rarity Rare
+#        #AreaLevel < 78
+#        SetBorderColor 150 150 75
+#        SetFontSize 40

@@ -1,0 +1,30 @@
+# space dragoon/programming dragon filter based off StupidFatHobbit's
+#("based off" means shamelessly stolen and made considerably worse)
+
+#NOTE: Hobbit's begun to update his filter again so this filter I've absolutely butchered is worthless now. Do not use.
+
+# ReplaceMagicWord
+# globally replace that shit into something else to generate infinite unique subfilter includes
+# also BUILD
+
+#v2.0.0
+
+#TO-DO:
+# - pre-T16 bases and overall mapping filter basically doesn't exist -> its just armour slots and random white items
+# - Even more strict version of this filter (hides bad cards, all bad bases which is actually default atm and also hides bad influence items, etc)
+# - Look into applying the identified item section to Veiled items, hide them otherwise endgame
+
+Import "Section_1_UniqueOverride_Default.filter"
+Import "Section_2_Currency_Default.filter"
+Import "Section_2.5_SixLinks_Default.filter"
+Import "Section_3_LeagueSpecific_Default.filter"
+Import "Section_4_Maps_Default.filter"
+Import "Section_5_InfluenceBases_Default.filter"
+Import "Section_6_IDCraft_Default.filter"
+Import "Section_7_Jewels_Default.filter"
+Import "Section_8_Uniques_Default.filter"
+Import "Section_9_DivCards_Default.filter"
+Import "Section_10_CraftingBases_HieroBL_Default.filter"
+Import "Section_11_ArchtypeRareFiltering_HieroBL_Default.filter"
+
+#eof

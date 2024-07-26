@@ -1,0 +1,50 @@
+###################################################################################
+####################### Section 12 - 3CL & Miscellaneous ##########################
+###################################################################################
+#Oddball items & items that should never normally drop
+Show
+        Class "Quest"
+        SetBorderColor 0 250 0
+        SetTextColor 0 250 0
+        SetFontSize 45
+        MinimapIcon 0 Green UpsideDownHouse
+        PlayEffect Green
+Show
+        BaseType "Avian Slippers" "Sacrificial Garb" "Ruby Amulet" "Grasping Mail"
+        SetFontSize 42
+        SetBackgroundColor 100 66 0
+        SetBorderColor 255 204 102
+Show
+        BaseType "Jet Amulet" "Jet Ring" "Golden Obi" "Golden Mantle" "Golden Bracers" "Golden Caligae" "Golden Hoop" "Golden Wreath" "Golden Flame"
+        SetFontSize 42
+        SetBackgroundColor 100 66 0
+        SetBorderColor 0 255 255
+
+#catch for 3 white socket 1h'ers dropping (for non-empower offhand gem levelling)
+Show
+        Class "Wand" "Sceptre" "Dagger" "Claw" "One Hand" "Shield"
+        Sockets WWW
+        SetFontSize 32
+        SetBorderColor 250 250 250
+        SetTextColor 250 250 250
+        PlayEffect White Temp
+        
+#rares with abyss sockets
+Show
+        Rarity Rare
+        Sockets A
+        SetFontSize 40
+        SetBorderColor 175 175 175
+        PlayEffect Grey Temp
+
+#fossil catchall (should never actually trigger, had to be moved here in Delirium because of the new orb otherwise it overrides that orb's highlight). all fossils should be caught in Delve blocks
+Show
+        BaseType "Fossil"
+        Class Currency
+        SetBackgroundColor 80 40 0
+        SetBorderColor 0 0 0
+        SetTextColor 225 75 0
+        SetFontSize 45
+        PlayAlertSound 11 120
+        MinimapIcon 2 Orange Circle
+        PlayEffect Brown

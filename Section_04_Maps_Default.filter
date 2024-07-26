@@ -1,0 +1,307 @@
+###################################################################################
+####################### Section 4 - Maps & Atlas Items ############################
+###################################################################################
+#Atlas Memories
+Show
+        BaseType "Niko's Memory" "Alva's Memory" "Kirac's Memory" "Einhar's Memory"
+        SetBackgroundColor 0 0 90 210
+        SetBorderColor 240 240 240
+        SetTextColor 250 200 50
+        SetFontSize 45
+        PlayAlertSound 4 150
+        MinimapIcon 1 Yellow Square
+        PlayEffect Yellow
+
+#Invitations & Other Special Atlas Items
+Show
+        BaseType "Maven's Invitation: The Atlas"
+        SetBackgroundColor 0 5 10
+        SetBorderColor 250 250 100
+        SetTextColor 250 100 250
+        SetFontSize 40
+        PlayAlertSound 7 50
+        DisableDropSound
+
+#im lazy so add Trialmaster into maven things. probably will make a custom colours thing for later
+Show
+        BaseType "Maven's Writ" "Invitation" "Engraved Ultimatum" "An Audience With The King"
+        SetBackgroundColor 0 5 10
+        SetBorderColor 250 100 250
+        SetTextColor 250 100 250
+        SetFontSize 45
+        PlayAlertSound 7 150
+        MinimapIcon 0 Pink Hexagon
+        PlayEffect Pink Temp
+
+Show
+        BaseType "Crescent Splinter"
+        SetBackgroundColor 50 50 50
+        SetBorderColor 225 225 225
+        SetTextColor 200 100 200
+        SetFontSize 45
+        MinimapIcon 1 Pink Raindrop
+        PlayEffect Pink
+
+#Voidstones
+Show
+        BaseType "Voidstone"
+        SetBackgroundColor 50 50 50
+        SetBorderColor 255 221 153
+        SetTextColor 255 221 153
+        SetFontSize 45
+        PlayAlertSound 11 200
+        MinimapIcon 0 Yellow UpsideDownHouse
+        PlayEffect Yellow
+        
+#Pantheon - Raised Light Blue
+Show
+        BaseType "Divine Vessel"
+        SetBackgroundColor 50 75 100
+        SetBorderColor 225 225 225
+        SetTextColor 150 200 250
+        SetFontSize 45
+        PlayAlertSound 4 150
+        MinimapIcon 1 Blue UpsideDownHouse
+        PlayEffect Blue
+Show
+        Class "Pantheon Soul"
+        SetBackgroundColor 50 75 100
+        SetBorderColor 250 250 250
+        SetTextColor 150 200 250
+        SetFontSize 45
+        PlayAlertSound 4 100
+        MinimapIcon 1 Blue UpsideDownHouse
+        PlayEffect Blue Temp
+
+#Fragments
+Show
+        BaseType "Fragment" "Mortal" "Crest"
+        Class "Map Fragments"
+        SetBackgroundColor 60 40 0
+        SetBorderColor 250 250 250
+        SetTextColor 250 225 150
+        SetFontSize 45
+        MinimapIcon 0 Brown Raindrop
+        PlayEffect Brown
+Show
+        Class "Map Fragments"
+        SetBackgroundColor 60 40 0
+        SetBorderColor 0 0 0
+        SetTextColor 250 225 150
+        SetFontSize 40
+        MinimapIcon 2 Brown Raindrop
+
+#unique maps
+Show
+        BaseType "Chateau" "Maze"
+        Class Map
+        Rarity Unique
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 125 0
+        SetFontSize 40
+        PlayAlertSound 6 150
+        MinimapIcon 0 White Hexagon
+        PlayEffect White
+Show
+        BaseType "Synthesised Map" "Museum" "Harbinger" "Moon Temple"
+        Class Map
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 250 250 250
+    SetTextColor 0 0 0
+        PlayAlertSound 5 150
+        SetFontSize 40
+        MinimapIcon 0 Orange Hexagon
+        PlayEffect Orange
+Show
+        Class Map
+        Rarity Unique
+        MapTier >= 14
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 221 153
+    SetTextColor 0 0 0
+        PlayAlertSound 4 100
+        SetFontSize 36
+        MinimapIcon 1 Orange Hexagon
+        PlayEffect Orange
+Show
+        Class Map
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 221 153
+    SetTextColor 0 0 0
+        PlayAlertSound 4 100
+        SetFontSize 36
+        MinimapIcon 2 Orange Hexagon
+        PlayEffect Orange Temp
+
+#blighted maps
+Show
+        Class Map
+        UberBlightedMap True
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 75 125 75
+        SetFontSize 45
+        PlayAlertSound 6 150
+        MinimapIcon 0 White Hexagon
+        PlayEffect White
+Show
+        Class Map
+        BlightedMap True
+        SetBackgroundColor 255 221 153
+        SetBorderColor 25 75 25
+        SetTextColor 75 125 75
+        SetFontSize 45
+        PlayAlertSound 9 100
+        MinimapIcon 2 Yellow Hexagon
+        PlayEffect Yellow
+        
+#enchanted maps (delirium/blight)
+Show
+        Class Map
+        AnyEnchantment True
+        SetBackgroundColor 255 221 153
+        SetBorderColor 25 75 25
+        SetTextColor 125 125 125
+        SetFontSize 40
+        PlayAlertSound 9 100
+        MinimapIcon 0 Green Hexagon
+        PlayEffect Grey
+        
+#influenced map special highlight (really just a light/icon color change right now) - as of delirium (3.10) they can only drop shaper/elder and as red tier maps.
+#guardian and elder maps (pink)
+#INFLUENCE MAPS
+Show
+        Class Map
+        HasInfluence Elder Hunter Redeemer Warlord Shaper Crusader
+        MapTier >= 14
+        SetBackgroundColor 40 40 40 200
+        SetBorderColor 200 200 200
+        SetTextColor 40 220 70
+        PlayAlertSound 5 150
+        SetFontSize 45
+        MinimapIcon 1 Grey Hexagon
+        PlayEffect Grey
+
+#top tier (red)
+Show
+        Class Map
+        HasInfluence Shaper
+        MapTier >= 11
+        SetBackgroundColor 255 221 153
+        SetBorderColor 255 0 0
+        SetTextColor 240 0 0    
+        SetFontSize 42
+        PlayAlertSound 8 150
+        MinimapIcon 1 Red Hexagon
+        PlayEffect Purple
+Show
+        Class Map
+        HasInfluence Elder
+        MapTier >= 11
+        SetBackgroundColor 255 221 153
+        SetBorderColor 255 0 0
+        SetTextColor 240 0 0    
+        SetFontSize 42
+        PlayAlertSound 8 150
+        MinimapIcon 1 Red Hexagon
+        PlayEffect Grey
+
+#corrupted map catcher
+Show
+        Class Map
+        Corrupted True
+        SetBackgroundColor 255 185 115
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 36
+
+#special map exceptions (just maps with "Vaal" prefix for now, dark red text)
+Show
+        Class Map
+        HasExplicitMod "Vaal"
+        SetBackgroundColor 255 221 153
+        SetBorderColor 0 0 0
+        SetTextColor 175 0 0
+        SetFontSize 40
+
+#base t16 map
+Show
+        Class Map
+        MapTier >= 14 # change to 16 later on, after 4 voidstones
+        SetBackgroundColor 20 20 20 220
+        SetBorderColor 240 0 0
+        SetTextColor 240 0 0
+        PlayAlertSound 8 165
+        SetFontSize 40
+        MinimapIcon 1 Red Hexagon
+        PlayEffect Red
+        DisableDropSound
+        
+#UNCOMMENT THIS TO HIDE ALL NON T16 MAPS        
+#Hide
+#       Class Map
+#       MapTier <= 15
+#       DisableDropSound
+#       SetFontSize 30
+
+#RED MAPS
+Show
+        Class Map
+        MapTier >= 11
+        SetBackgroundColor 20 20 20 220
+        SetBorderColor 0 0 0 0
+        SetTextColor 240 0 0
+        PlayAlertSound 8 150
+        SetFontSize 40
+        MinimapIcon 1 Red Hexagon
+        PlayEffect Red Temp
+        DisableDropSound
+
+#UNCOMMENT THIS TO HIDE ALL NON RED MAPS
+#Hide
+#       Class Map
+#       MapTier <= 10
+#       DisableDropSound
+#       SetFontSize 30
+
+#YELLOW MAPS
+Show
+        Class Map
+        MapTier >= 6
+        SetBackgroundColor 20 20 20 220
+        SetBorderColor 0 0 0 0
+        SetTextColor 240 240 90
+        PlayAlertSound 8 100
+        SetFontSize 40
+        MinimapIcon 1 Yellow Hexagon
+        PlayEffect Yellow Temp
+        DisableDropSound
+
+#UNCOMMENT THIS TO HIDE ALL WHITE MAPS
+#Hide
+#       Class Map
+#       MapTier <= 5
+#       DisableDropSound
+#       SetFontSize 30
+
+#bottom tier (t1-t3 black, t4-t5 green)
+Show
+        Class Map
+#       AreaLevel >= 75
+        SetBackgroundColor 20 20 20 220
+        SetBorderColor 0 0 0 0
+        SetTextColor 240 240 240
+        PlayAlertSound 8 75
+        SetFontSize 36
+        MinimapIcon 1 White Hexagon
+        DisableDropSound
+Show
+        Class Map
+        SetBackgroundColor 255 221 153
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 38
+        MinimapIcon 2 White Hexagon

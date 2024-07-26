@@ -1,0 +1,68 @@
+###################################################################################
+################# Section 15 - Chaos Recipe & Other Niche Options #################
+###################################################################################
+        
+#Chisel recipe - off by default
+#Hide
+#       BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+#       ItemLevel > 66
+#       Rarity Normal
+
+#ALTERATION FARMING GOES HERE
+#chaos recipe is dead as fuck so yeah this is for farming alts now lollll!!!!
+#Chaos Recipe 2x2's: faint yellow borders on low droplevel 2x2 items (this must be placed below Section 18 - Armour or it takes priority on rares)
+
+#because you can pick up more 1x3 items than anything else, this is ideal for alteration farming.
+#ONLY toggle this on if you want shitloads of alts.
+#Show
+#       Class "Gloves" "Helm" "Boots" "Claw" "Dagger" "Wand"
+#       Rarity Rare
+#       SetBorderColor 150 150 75
+#       SetFontSize 30
+
+#CHAOS RECIPE TOGGLE BLOCKS - Hides a ton of shit rares that aren't caught by Section 11. Delete these three blocks if for some insane reason you want to do chaos recipe in currentyear (or remove the classes you want to show). 
+Hide
+        Class "One Hand" "Two Hand" "Staves" "Warstaves" "Dagger" "Claw" "Bow" "Body Armour" "Quiver"
+        Rarity Rare
+        AreaLevel >= 63
+        DropLevel <= 50
+Hide
+        Class "One Hand" "Two Hand" "Staves" "Warstaves" "Dagger" "Claw" "Bow" "Body Armour" "Quiver" "Boots" "Helm" "Gloves"
+        Rarity Rare
+        AreaLevel >= 68
+        
+#"thinning" blocks removes the rares not relevant to chaos recipe once maps start, only kicks in if chaos recipe is enabled. Assumes you're using 2h for chaos recipe b/c less clicks. 
+Hide    
+        Class "Quiver" "One Hand" "Dagger" "Claw"
+        Rarity Rare
+        AreaLevel >= 67
+Hide
+        Class "Wand" "Sceptre" "Shield" "Gloves" "Boots" "Helm"
+        Rarity Rare
+        AreaLevel >= 70
+
+#fading out of low droplevel rares at higher levels (only kicks in if chaos recipe is enabled)
+#Show
+#        Rarity Rare
+#        ItemLevel >= 68
+#        DropLevel <= 50
+#        SetBackgroundColor 0 0 0 185
+#        SetTextColor 255 255 119 185
+#        SetFontSize 25
+        
+###################################################################################
+######################### Section 15.5 - Animate Weapon ################################
+###################################################################################
+#Enable first block only for standard animate, second block is for ranged animate with the threshold jewels. Weapons will be tiny font size and faded out. 
+#Show
+#       Class "Axes" "Swords" "Maces" "Claws" "Staves" "Sceptres" "Daggers"
+#       Rarity Normal
+#       SetFontSize 18
+#       SetBackgroundColor 0 0 0 50
+#       SetBorderColor 100 100 100
+#Show
+#       Class "Wands" "Bows"
+#       Rarity Normal
+#       SetFontSize 18
+#       SetBackgroundColor 0 0 0 50
+#       SetBorderColor 100 100 100

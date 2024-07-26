@@ -1,0 +1,123 @@
+###################################################################################
+###################### Section 9 - Divination Cards ###############################
+###################################################################################
+#Note: All div cards make sounds by default (meaning if a card isn't listed it'll make sound and have icon)
+
+Show
+        BaseType == "The Apothecary"
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 240 0 240
+        SetFontSize 45
+        PlayAlertSound 6 250
+        CustomAlertSoundOptional "gachiA.mp3" 100
+        MinimapIcon 0 White Square
+        PlayEffect White
+
+#Maximum Tier: 100c+. White. Immortal Resolve is usually the low-end cutoff
+Show
+        BaseType == "House of Mirrors" "The Doctor" "The Fiend" "Immortal Resolve" "The Demon" "Nook's Crown" "Beauty Through Death" "The Samurai's Eye" "Succor of the Sinless" "The Cheater"  "Unrequited Love" "Love Through Ice" "Luminous Trove" "The Dragon's Heart" "The Enlightened" "The Price of Devotion" "The Shieldbearer" "The Sephirot" "Divine Beauty" "The Insane Cat" "Brother's Gift" "Fire of Unknown Origin"
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 240 0 240
+        SetFontSize 45
+        PlayAlertSound 6 170
+        MinimapIcon 0 White Square
+        PlayEffect White
+
+#High Tier: 20c to 100c. Fuschia. Relatively few cards should be in this tier. Fuschia background and max tier sound. Alluring Bounty should be high end cut-off
+Show
+        BaseType == "The Offering" "Pride Before the Fall" "The King's Heart" "Hunter's Reward" "The Immortal" "Wealth and Power" "The Polymath" "Abandoned Wealth" "The Rusted Bard" "The Spark and the Flame" "The Nurse" "The Eye of Terror" "Void of the Elements" "The Damned" "The Old Man" "The Price of Loyalty" "Burning Blood" "Pride of the First Ones" "Etched in Blood" "Alluring Bounty" "The Progeny of Lunaris" "The White Knight" "The Hive of Knowledge" "Gift of Asenath" "The Long Con" "The Gulf" "Desecrated Virtue" "Seven Years Bad Luck" "Keeper's Corruption" "Deadly Joy" "Broken Promises" "Winter's Embrace" "The Scout" "Home" "A Fate Worse Than Death" "The Destination" "Altered Perception" "Darker Half" "Doryani's Epiphany" "Gemcutter's Mercy" "Choking Guilt" "Brother's Stash" "The Wedding Gift" "Poisoned Faith" "The Fortunate" "Assassin's Gift" "I See Brothers"
+        Class "Divination Card"
+        SetBackgroundColor 250 100 200
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 6 130
+        SetFontSize 40
+        MinimapIcon 0 Red Square
+        PlayEffect Red
+
+#Upper Tier: 5c to 20c. Lavender. Saint's Treasure should be the highest card in this tier (roughly). All 6L cards should be in this tier (except Imperial Legacy).
+Show
+        BaseType == "The Devastator" "The Ethereal" "The Artist" "The Celestial Justicar" "The Saint's Treasure" "The Dapper Prodigy" "The Warlord" "The Vast" "The Throne" "The Valkyrie" "The Soul" "Emperor of Purity" "Heterochromia" "The Hoarder" "The Chains that Bind" "Bowyer's Dream" "Lucky Deck" "Time-Lost Relic" "The Dreamer" "The Obscured" "Harmony of Souls" "The Admirer" "The Undaunted" "The Professor" "The Hale Heart" "The Beast" "The Innocent" "The Cacophony" "The Wilted Rose" "Merciless Armament" "Rebirth" "Left to Fate" "The Thaumaturgist" "The Journey" "The Landing" "The Messenger" "Monochrome" "The Seeker" "Alone in the Darkness" "The Porcupine" "The Soul" "The Last One Standing" "Demigod's Wager" "The Primordial" "Azyran's Reward" "The Bargain" "Remembrance" "Mawr Blaidd" "The Brittle Emperor" "The Hunger" "The Undisputed" "The Master" "The Wind" "The Mayor" "The Queen" "The Mad King" "The Life Thief" "The Risk" "Blessing of God" "The Deep Ones" "Baited Expectations" "Deathly Designs" "The Chosen" "Cameria's Cut" "The Fishmonger" "The Bones" "Friendship" "Squandered Prosperity" "Underground Forest" "The Escape" "Boon of the First Ones" "The Wolven King's Bite" "Council of Cats" "The Eldritch Decay" "Peaceful Moments" "Dark Dreams" "The Greatest Intentions" "The Sustenance" "A Note in the Wind" "The Betrayal" "The Sacrifice" "The World Eater" "The Bitter Blossom" "The Academic" "Unchained" "The Strategist" "The Long Watch" "Fateful Meeting" "Haunting Shadows" "The Astromancer" "Reckless Ambition" "Draped in Dreams" "Brotherhood in Exile" "A Modest Request" "The Enthusiasts" "The Eternal War" "The Offspring" "The Mind's Eyes" "Lachrymal Necrosis" "Dementophobia" "Chasing Risk" "Guardian's Challenge" "The Forgotten Treasure" "Justified Ambition" "The Pact" "The Forward Gaze" "Rebirth and Renewal" "Lethean Temptation" "The Leviathan" "Broken Truce" "Endless Night" "The Enforcer" "Auspicious Ambitions" "Dark Temptation" "Soul Quenched" "Eldritch Perfection" "Who Asked" "Lonely Warrior" "Father's Love" "Avian Pursuit" "Temperance" "Toxic Tidings"
+        Class "Divination Card"
+        SetBackgroundColor 200 150 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 2 100
+        SetFontSize 40
+        MinimapIcon 1 Purple Square
+        PlayEffect Purple
+#Single turn ins - cards with a stack size of 1. Flagged same as lavender tier as a reminder to separate them when you pick them up. Really more for organizational purposes as the lavender tier block is getting kinda big. 
+Show
+        BaseType == "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void"
+        Class "Divination Card"
+        SetBackgroundColor 200 150 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 2 90
+        SetFontSize 40
+        MinimapIcon 1 Purple Square
+        PlayEffect Purple
+
+#cards in no single block leave them purposefully in the common block: "Assassin's Favour"
+
+#Low Tier: Shit or Very Common Div Cards: No sounds on these, darker blue color. IMPORTANT: More about removing cards that drop a lot to remove sound spam than removing low value cards - cards that are low value but actually rare should still show unless they're total dogshit. Everything here should be <1 chaos.
+Show
+        BaseType == "The Catalyst" "The Road to Power" "The Calling"  "The Visionary" "The Incantation" "Cartographer's Delight" "The Pack Leader" "The Fox" "The Puzzle" "The Easy Stroll" "The Aesthete" "The Wolf" "The Jeweller's Boon" "Cursed Words" "Boon of Justice" "Akil's Prophecy" "Hubris" "Earth Drinker" "The Bear Woman" "The Cache" "The Doppelganger" "The Deceiver" "The Deal" "The Fox" "Treasure Hunter" "The Oath" "The Price of Protection" "The Penitent" "The Standoff" "The Sword King's Salute" "Buried Treasure" "From Bone to Ashes" "The Brawny Battle Mage" "The Journalist" "Mitts" "Hope"
+        Class "Divination Card" 
+#       SetBackgroundColor 150 200 250
+#       SetBackgroundColor 125 175 225
+        SetBackgroundColor 110 160 210
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+
+#THIS MIGHT NEED TO GET REVISED FOR LEAGUE START
+#Beyond trash tier: Actually hidden in all filters, literally a waste of a click to pick up. Only the very worst get added here, used VERY sparingly. 
+Hide
+        BaseType == "The Carrion Crow" "The Surgeon" "The King's Blade" "The Lunaris Priestess" "The Gambler" "The Lover" "The Army of Blood" "The Wolf's Shadow" "The Demoness" "Struck by Lightning" "The Metalsmith's Gift" "Lantador's Lost Love" "The Scarred Meadow" "The Mercenary" "The Warden" "Rain Tempter" "Anarchy's Price" "The Watcher" "The Coming Storm" "The Blazing Fire" "Tranquillity" "The Rabid Rhoa" "The Hermit" "The Realm" "The Web" "Turn the Other Cheek" "Lysah's Respite" "The Lich" "The Feast" "The Witch" "The Ruthless Ceinture" "The Siren" "Death" "Destined to Crumble" "The Inoculated" "The Formless Sea" "Audacity" "Doedre's Madness" "The Spoiled Prince" "Rain of Chaos" "Thunderous Skies" "The Twins" "Light and Truth" "The Gentleman" "The Opulent" "A Mother's Parting Gift" "The Sun" "The Conduit" "Call to the First Ones" "The Fathomless Depths" "Forbidden Power" "Rats" "Thirst for Knowledge" "The Tumbleweed" "Dark Dreams" "Blind Venture" "Glimmer of Hope" "Grave Knowledge" "Might is Right" "Lost Worlds" "The Explorer" "The Fletcher" "The Gladiator" "The Skeleton" "The Lord of Celebration" "The Poet" "The Summoner" "The Wolverine" "Prosperity" "The Flora's Gift" "Emperor's Luck" "Her Mask" "The Sigil" "Prosperity"
+        Class "Divination Card" 
+#       SetBackgroundColor 150 200 250
+#       SetBackgroundColor 125 175 225
+        SetBackgroundColor 110 160 210
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 30
+        
+#GENERAL FILTER ONLY - racing/leaguestart tabula exception block, bumps all remaining 6L cards up to lavender tier
+Show
+        BaseType "Humility" "Vanity" "Imperial Legacy"
+        Class "Divination Card"
+        AreaLevel <= 77
+        SetBackgroundColor 200 150 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 2 125
+        SetFontSize 40
+        MinimapIcon 1 Blue Square
+        PlayEffect Blue
+
+#Mid Tier Catchall: 1-4c. Light blue. This is the default tier for all div cards unless caught by another block.
+Show
+        Class "Divination Card"
+        SetBackgroundColor 150 200 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 3 100
+        SetFontSize 40
+        MinimapIcon 2 Blue Square
+        PlayEffect Blue Temp
+
+#Stacked Decks - makes more sense in div card block even though it's technically a currency
+Show
+        BaseType "Stacked Deck"
+        Class Currency
+#       SetBackgroundColor 100 150 250
+        SetBackgroundColor 0 200 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound 3 100
+        SetFontSize 40
+        MinimapIcon 2 Blue Square
+        PlayEffect Blue Temp

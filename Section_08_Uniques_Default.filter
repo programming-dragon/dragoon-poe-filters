@@ -1,0 +1,354 @@
+###################################################################################
+############################# Section 8 - Uniques #################################
+###################################################################################
+
+#dragoon todo list
+#needs for multiple of the sections to be merged, ultimately what matters is:
+#a) wether its worth picking up or not
+#b) wether its worth looking at or hiding
+#c) how good it is -> how relevant it is -> how much more sound it should make
+#section of items to hide should probably get revised again as well, and maybe even expanded.
+#make flasks/amulets look fairly standard, as most are at the very least worth picking up, even if just to stash them forever
+#influenced boss drops should be shown solely based on that, no need to check base types
+#keep track of whatever fucking new uniques might not be dogshit and update according to HC trade economy (fuck SC LOL)
+
+
+#Note: Uniques with special aspects are handled in those respective sections (i.e. influenced uniques influence section, veiled uniques betrayal section, unique jewels jewel section etc...)
+
+#Maximum Value Tier - Only uniques with 100c+ value and no shared basetypes. Includes top value league-specific items if there are no shared bases. 
+Show
+        BaseType "Gladiator Plate" "Champion Kite Shield" "Crusader Boots" "Prophecy Wand" "Ornate Quiver" "Silk Gloves" "Fluted Bascinet" "Unset Amulet" "Riveted Boots"
+        Rarity Unique
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 125 0
+        SetFontSize 45
+        PlayAlertSound 6 250
+        CustomAlertSoundOptional "gachiA.mp3" 90
+        MinimapIcon 0 White Star
+        PlayEffect White
+
+#The Squire
+Show
+        BaseType "Elegant Round Shield"
+        Sockets WWW
+        Rarity Unique
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 125 0
+        SetFontSize 45
+        PlayAlertSound 6 250
+        CustomAlertSoundOptional "gachiA.mp3" 90
+        MinimapIcon 0 White Star
+        PlayEffect White
+
+#dumbass Kalandra unique ring lol
+Show
+        BaseType == "Ring"
+#        Mirrored True #unsure if this always applies so commenting it out
+        Rarity Unique
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 125 0
+        SetFontSize 45
+        PlayAlertSound 6 250
+        CustomAlertSoundOptional "gachiA.mp3" 90
+        MinimapIcon 0 White Star
+        PlayEffect White
+
+Show
+        BaseType "Nameless Ring"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 0 0 0    
+        SetTextColor 0 0 0
+        SetFontSize 38
+        PlayAlertSound 4 80
+        MinimapIcon 2 Yellow Star
+        PlayEffect Yellow Temp
+        
+#league start uniques, filter out in strict filter
+#comment them out gradually, don't need a lot of the armour ones but you want a good corrupt on obliteration
+#Show
+#       BaseType "Imbued Wand" "Deerskin Boots"
+#       Rarity Unique
+#       SetBackgroundColor 225 100 0
+#       SetBorderColor 255 255 255
+#       SetTextColor 0 0 0
+#       SetFontSize 40
+#       PlayAlertSound 5 90
+#       MinimapIcon 0 Orange Star
+#       PlayEffect Orange Temp
+        
+#High Value Tier (World) - Basetypes with guaranteed valuable uniques. Should be worth ~20c minimum.
+Show
+        BaseType "Glorious Plate" "Savant's Robe" "Wyrmscale Doublet" "Imperial Maul" "Titan Greaves" "Void Axe" "Highborn Staff" "Cardinal Round Shield" "Siege Axe" "Rawhide Tower Shield" "Pinnacle Tower Shield" "Zodiac Leather" "Branded Kite Shield" "Exquisite Leather" "Lathi" "Crimson Round Shield" "Mirrored Spiked Shield" "Grand Mana Flask" "Ezomyte Dagger" "Rawhide Boots" "Vanguard Belt" "Sapphire Flask" "Amethyst Ring" "Wolf Pelt" "Embroidered Gloves" "Steel Kite Shield" "Majestic Plate" "Paua Amulet" "Occultist's Vestment" "Amethyst Ring"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 150
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+#High Value Tier (Fixed Location) - Main game boss specific uniques (Shaper, Elder, etc). League-specific bosses should be in the next block. 20c+ value. Includes prophecy uniques with no shared bases. Still WIP, some may be in other tiers. 
+Show
+        BaseType "Slink Boots" "Cutlass" "Topaz Flask" "Iron Sceptre" "Arcanist Slippers" "Arcanist Gloves" "Karui Maul" "Assassin's Boots" "Hydrascale Gauntlets" "Ambush Mitts" "Legion Gloves" "Ezomyte Tower Shield" "Magistrate Crown" "Meatgrinder" "Serpentscale Gauntlets" "Blood Raiment" "Riveted Gloves" "Blood Sceptre" "Demon Dagger" "Painted Tower Shield" "Steelwood Bow" "Necromancer Circlet" "Stygian Vise" "Crystal Belt"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 70
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+
+#influenced uniques, to catch all the Elder/Shaper ones
+Show
+        HasInfluence Elder Shaper
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 90
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+        
+#High Value Tier (League Specific) - high tier for league specific with guaranteed high value, done for organizational purposes and my sanity more than anything else. 20c+ value. Still WIP, some may be in other tiers. 
+Show
+        BaseType "Judgement Staff" "Vaal Rapier" "Deerskin Gloves" "Astral Plate" "Desert Brigandine" "Engraved Greatsword" "Colosseum Plate"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 125
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+        
+#Special Exceptions
+#2 socket abyss uniques
+Show
+        BaseType "Steelscale Gauntlets" "Murder Boots"
+        Sockets AA
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 150
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+#shroud of the lightless
+Show
+        BaseType "Carnal Armour"
+        Sockets A
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 255 255
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 150
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+#glimpse of chaos can be targetted directly due to always dropping corrupted
+Show
+        BaseType "Vaal Mask"
+        Rarity Unique
+        Corrupted True
+        SetBackgroundColor 225 100 0
+        SetBorderColor 255 0 0
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 5 150
+        MinimapIcon 0 Orange Star
+        PlayEffect Orange
+#double corrupted unique exception
+Show
+        Rarity Unique
+        CorruptedMods 2
+        SetBackgroundColor 225 100 0
+        SetBorderColor 250 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 4 100
+        MinimapIcon 1 Yellow Star
+        PlayEffect Brown
+
+#Upper Variable Value / Shared Basetypes Tier - shared bases where at least one is a world drop and has 10c or higher value. Teal border.
+Show
+        BaseType "Onyx Amulet" "Ebony Tower Shield" "Imperial Bow" "Sadist Garb" "Lacquered Garb" "Carved Wand" "Goathide Boots" "Sorcerer Boots" "Fiend Dagger" "Prophet Crown" "Studded Belt" "Cloth Belt" "Archon Kite Shield" "Jewelled Foil" "Heavy Belt" "Leather Belt" "Vaal Blade" "Granite Flask" "Sage's Robe" "Spidersilk Robe" "Assassin Bow" "Imbued Wand" "Deerskin Boots"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 0 250 250
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 4 100
+        MinimapIcon 2 Cyan Star
+        PlayEffect Cyan Temp
+
+#Small Value Tier - Basetypes with guaranteed low but consistent value uniques. An average roll should be ~5c minimum, Iron Gauntlets should probably be the lowest thing in this tier. (WORK IN PROGRESS, OLD THRESHOLD WAS 2c)
+Show
+        BaseType "Saintly Chainmail" "Nubuck Boots" "Imperial Staff" "Abyssal Axe" "Sinner Tricorne" "Blue Pearl Amulet" "Amethyst Flask" "Vaal Gauntlets" "Stibnite Flask" "Bismuth Flask" "Crusader Plate" "Solaris Circlet" "Elegant Ringmail" "Callous Mask" "Polished Spiked Shield" "Saint's Hauberk" "Full Wyrmscale" "Butcher Axe" "Varnished Coat" "Runic" "Iron Flask" "Carnal Armour" "Stealth Boots" "Silken Vest" "Scholar's Robe" "Spine Bow" "Raven Mask" "Platinum Sceptre" "Omen Wand" "Steelscale Gauntlets" "Ritual Sceptre" "Hydrascale Boots"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 38
+        PlayAlertSound 4 70
+        MinimapIcon 2 Yellow Star
+        PlayEffect Brown Temp
+#Variable Value / Shared Basetypes Tier - Basetypes with both valuable and worthless uniques but where the valuable unique is 2c to 10c. Also includes uniques where 90% of rolls are worthless (facebreaker, bones of ullr) but the high ones sell for notably more. Same highlighting as SV but with a temporary light. 
+Show
+        BaseType "Spike-Point Arrow Quiver" "Gavel" "Gold Amulet" "Iron Ring" "Citrine Amulet" "Blunt Arrow Quiver" "Karui Sceptre"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 38
+        PlayAlertSound 4 70
+        MinimapIcon 2 Brown Star
+        PlayEffect Brown Temp
+
+#Loreweave / Unique Ring Blocks - handles ALL rings now, given as they're all must-pick-up regardless if trade or ssf. first block is for 85+ vaal orb targets
+Show
+        Class Ring
+        Rarity Unique
+        ItemLevel >= 85
+        SetBackgroundColor 225 100 0
+        SetBorderColor 250 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 4 70
+        MinimapIcon 2 Yellow Star
+        PlayEffect Brown Temp
+Show
+        Class Ring
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 4 70
+        MinimapIcon 2 Yellow Star
+        PlayEffect Brown Temp
+        
+        
+#legacy breach uniques, nothing else has this basetypes, worth keeping around just to track them
+        BaseType "Blinder" "Thorium Spirit Shield" "Bone Bow" "Siege Helmet" "Coronal Leather" "Labrys" 
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 100 100 100
+        SetTextColor 75 75 75
+        SetFontSize 38
+        PlayAlertSound 7 120
+        MinimapIcon 0 Grey Star
+        PlayEffect Grey 
+
+#League-Specific Blocks (contains basetypes whose only valuable uniques are league specific, work in progress some of the uniques are in other blocks). Grey border. Examples: Headhunter, Varunastra, The Gull
+#Note that this ONLY contains uniques with multiple basetypes, if a league-specific unique is exclusive to a base it should simply be tiered appropriately.
+#The design goal behind the different color icon and sound is that if you see the grey star minimap icon (and hear the uncertain sound) but are in an area where no league specific uniques can drop, you can safely ignore it.
+Show
+        BaseType "Lapis Amulet" "Ezomyte Tower Shield" "Goliath Greaves" "Vaal Axe" "Royal Burgonet" "Ritual Sceptre" "Vaal Blade" "Agate Amulet" "Sanctified Life Flask" "Sanctified Mana Flask" "Coral Amulet" "Sulphur Flask" "Murder Mitts" "Holy Chainmail" "Titanium Spirit Shield" "Sulphur Flask" "Turquoise Amulet"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 100 100 100
+        SetTextColor 75 75 75
+        SetFontSize 38
+        PlayAlertSound 7 70
+        MinimapIcon 2 Grey Star
+        PlayEffect Grey Temp
+
+Show
+        BaseType "Vaal Spirit Shield" "Carnal Boots" "Gemstone Sword" "Strapped Mitts"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 100 100 100
+        SetTextColor 75 75 75
+        SetFontSize 38
+        PlayAlertSound 7 70
+        MinimapIcon 1 Grey Star
+        PlayEffect Grey Temp
+
+#No sound block - this is for league-specific bases where the non-league specific base drops a LOT. icon is retained
+Show
+        BaseType "Rustic Sash" "Jade Amulet" "Amber Amulet" "Two-Point Arrow Quiver" "Legion Boots" "Iron Circlet" "Bronzescale Gauntlets" "Imperial Claw" "Mind Cage" "Jade Amulet" "Chain Belt"
+        Rarity Unique
+        SetBackgroundColor 225 100 0
+        SetBorderColor 100 100 100
+        SetTextColor 75 75 75
+        SetFontSize 36
+        MinimapIcon 2 Grey Star
+
+#Levelling Uniques w/sound at lower ilvls only (only valuable day 1, 1c or less after that). Disabled in Strict+
+Show
+        Rarity Unique
+        ItemLevel <= 67
+        BaseType "Iron Gauntlets" "Leather Cap" "Wool Shoes" "Driftwood Wand" "Bronze Sceptre" "Long Bow" "Death Bow" "Jade Amulet" "Rustic Sash" "Decorative Axe" "Sabre" "Polished Spiked Shield" "Goathide Gloves" "Sharktooth Arrow Quiver"
+        SetBackgroundColor 225 100 0
+        SetBorderColor 0 0 0    
+        SetTextColor 0 0 0
+        SetFontSize 38
+        PlayAlertSound 4 80
+        MinimapIcon 2 Yellow Star
+        PlayEffect Yellow Temp
+#GOOD levelling uniques, always shown
+Show
+        Rarity Unique
+        BaseType "Iron Gauntlets" "Leather Cap" "Wool Shoes" "Driftwood Wand"
+        Rarity Unique
+        SetBackgroundColor 200 75 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+
+#Shared Boss Bases - basetypes where the only valuable unique on it is a boss drop and the others are worthless. Purple border/star, the idea is that you ignore it unless you just killed a boss. No sound or light, smallest icon. very work in progress, lots of stuff still needs to be added
+#as of 3.11.4 update, second block includes low-value boss only uniques. attempting to solidify that color border meaning boss drop. very much WIP, a lot of uniques belonging here are lingering in other blocks
+Show
+        BaseType "Crusader Gloves" "Carnal Mitts" "Titan Gauntlets" "Void Sceptre" "Great Crown" "Praetor Crown" "Ruby Flask" "Silver Flask" "Legion Sword" "Zealot Gloves" "Ancient Gauntlets" "Vaal Sceptre" "Vaal Mask" "Dragonscale Boots"
+        Rarity Unique
+        SetBackgroundColor 200 75 0
+#       SetBorderColor 150 0 250
+        SetBorderColor 200 100 250
+        SetTextColor 0 0 0
+        SetFontSize 36
+#       MinimapIcon 2 Purple Star
+Show
+        BaseType "Royal Sceptre"
+        Rarity Unique
+        SetBackgroundColor 200 75 0
+#       SetBorderColor 150 0 250
+        SetBorderColor 200 100 250
+        SetTextColor 0 0 0
+        SetFontSize 36
+#       MinimapIcon 2 Purple Star
+
+#hidden uniques among all filters -- actual trash
+Hide
+        Rarity Unique
+        BaseType "Black Maw Talisman" "Rotfeather Talisman" 
+        DisableDropSound
+
+
+#list of very common SHIT uniques that can safely be hidden
+#NOTE: certain Bestiary uniques might be hidden if you use this block!! Use with caution!!
+Show
+        BaseType "Ornate Ringmail" "Conquest Chainmail" "Copper Plate" "Bone Armour" "Plated Greaves" "Velvet Slippers" "Silk Slippers" "Ironscale Boots" "Mesh Boots" "Clasped Boots" "Strapped Boots" "Bronze Gauntlets" "Steel Gauntlets" "Goliath Gauntlets" "Eelskin Gloves" "Nubuck Gloves" "Velvet Gloves" "Satin Gloves" "Samite Gloves" "Ironscale Gauntlets" "Dragonscale Gauntlets" "Chain Gloves" "Mesh Gloves" "Soldier Gloves" "Wrapped Mitts" "Clasped Mitts" "Close Helmet" "Ezomyte Burgonet" "Tricorne" "Ursine Pelt" "Tribal Circlet" "Bone Circlet" "Lunaris Circlet" "Gilded Sallet" "Secutor Helm" "Great Helmet" "Iron Mask" "Plague Mask" "Festival Mask" "Golden Mask" "Regicide Mask" "Corrugated Buckler" "Vaal Buckler" "Harmonic Spirit Shield" "Rotted Round Shield" "Studded Round Shield" "Plank Kite Shield" "War Buckler" "Compound Spiked Shield" "Sovereign Spiked Shield" "Supreme Spiked Shield" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Heavy Arrow Quiver" "Cleaver" "Decorative Axe" "Tomahawk" "Infernal Axe" "Woodsplitter" "Poleaxe" "Shadow Axe" "Headsman Axe" "Recurve Bow" "Royal Bow" "Death Bow" "Decimation Bow" "Harbinger Bow" "Nailed Fist" "Awl" "Timeworn Claw" "Fright Claw" "Hellion's Paw" "Skinning Knife" "Stiletto" "Flaying Knife" "Boot Knife" "Boot Blade" "Platinum Kris" "Spiked Club" "Dream Mace" "Auric Mace" "Sledgehammer" "Jagged Maul" "Brass Maul" "Great Mallet" "Dread Maul" "Terror Maul" "Grinning Fetish" "Crystal Sceptre" "Opal Sceptre" "Tyrant's Sekhem" "Carnal Sceptre" "Gnarled Branch" "Royal Staff" "Primordial Staff" "Midnight Blade" "Rusted Sword" "Sabre" "War Sword" "Elegant Sword" "Corsair Sword" "Spiraled Wand" "Engraved Wand" "Visored Sallet"
+        Rarity Unique
+        SetBackgroundColor 200 75 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 36
+        DisableDropSound
+
+#Bottom Tier Uniques: All other low value, mostly shit uniques. no sound, darker background
+Show 
+        Rarity Unique
+        SetBackgroundColor 200 75 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 36
+        DisableDropSound
+#       PlayAlertSound 4 100 #SSF Players - Enable this line to sound ALL uniques for alch shards
+#       MinimapIcon 2 Brown Star #SSF Players - Enable this line for minimap icons on all shit uniques

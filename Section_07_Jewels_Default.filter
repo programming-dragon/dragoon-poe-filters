@@ -1,0 +1,197 @@
+###################################################################################
+######################## Section 7 - Jewels & Sockets #############################
+###################################################################################
+#unique jewels
+Show
+        BaseType "Prismatic Jewel" "Timeless Jewel" "Large Cluster Jewel"
+        Rarity Unique
+        SetBackgroundColor 250 250 250
+        SetBorderColor 0 0 0
+        SetTextColor 250 125 0
+        SetFontSize 45
+        PlayAlertSound 6 200
+        MinimapIcon 0 White Kite
+        PlayEffect White
+Show
+        BaseType "Cluster Jewel"
+        Class Jewel
+        Rarity Unique
+        SetBackgroundColor 250 150 0
+        SetBorderColor 0 250 250
+        SetTextColor 0 0 0
+        SetFontSize 45
+        PlayAlertSound 5 150
+        MinimapIcon 0 Orange Kite
+        PlayEffect Orange
+Show
+        Class Jewel
+        Rarity Unique
+        SetBackgroundColor 250 150 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 7 150
+        MinimapIcon 2 Red Star
+        PlayEffect Brown Temp
+        
+#cluster jewels
+Show
+        BaseType "Large Cluster Jewel"
+        EnchantmentPassiveNum = 8
+        SetBackgroundColor 250 125 150
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 12 200
+        MinimapIcon 1 Pink Kite
+        PlayEffect Pink
+Show
+        BaseType "Medium Cluster Jewel"
+        EnchantmentPassiveNum <= 5
+        SetBackgroundColor 250 125 150
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 12 200
+        MinimapIcon 1 Pink Kite
+        PlayEffect Pink
+Show
+        BaseType "Small Cluster Jewel"
+        SetBackgroundColor 250 125 150
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 12 200
+        MinimapIcon 1 Pink Kite
+        PlayEffect Pink
+Show
+        BaseType "Cluster Jewel"
+        SetBackgroundColor 200 100 115
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        
+#abyss jewels (Abyss League 3.1.0)
+Show
+        Class "Abyss Jewel"
+        ItemLevel >= 82
+        Rarity Rare
+        SetBackgroundColor 250 225 100
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 12 200
+        MinimapIcon 2 Brown Kite
+        PlayEffect Brown
+Show
+        Class "Abyss Jewel"
+        ItemLevel >= 82
+        Rarity Magic
+        SetBackgroundColor 150 125 250
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 12 200
+        MinimapIcon 2 Brown Kite
+        PlayEffect Brown
+Show
+        Class "Abyss Jewel"
+        ItemLevel >= 82
+        SetBackgroundColor 150 125 225
+        SetBorderColor 250 250 250
+        SetTextColor 0 0 0
+        SetFontSize 42
+        PlayAlertSound 12 200
+        MinimapIcon 2 Brown Kite
+        PlayEffect Brown
+Show
+        Class "Abyss Jewel"
+        Rarity Rare
+        SetBackgroundColor 250 225 100
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+Hide
+        Class "Abyss Jewel"
+        FracturedItem False
+        Rarity Magic
+        SetBackgroundColor 150 125 250
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 34
+Show
+        Class "Abyss Jewel"
+        SetBackgroundColor 150 125 225
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+Show
+        Class Jewel
+        Rarity Rare
+        SetBackgroundColor 225 225 110
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+Show
+        Class Jewel
+        Rarity Magic
+        SetBackgroundColor 135 135 254
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 30
+Hide
+        Class Jewel
+        FracturedItem False
+        SetBackgroundColor 135 135 254
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+
+#Sockets
+#NOTE - 6L is located in Currency section and 3CL (chrome recipe) is located in Misc section due to code priority issues.
+#It's not perfect but having them located together is an absolute nightmare, as having 3 items of extremely different values in the same block leads to a massive number of exception blocks and bandaid fixes.
+
+Show
+        Sockets = 6
+        Rarity Unique
+        SetBackgroundColor 0 115 0
+        SetBorderColor 225 100 0
+        SetTextColor 225 100 0
+        SetFontSize 40
+        PlayAlertSound 3 90
+        MinimapIcon 2 Green Square
+        PlayEffect Orange Temp
+Show
+        Sockets = 6
+        BaseType "Full Dragonscale" #"Saintly Chainmail" "Sadist Garb"
+        ItemLevel >= 86
+        SetBackgroundColor 0 115 0
+        SetBorderColor 0 250 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 3 90
+        MinimapIcon 2 Green Square
+
+#look into disabling this shit later on since its fucking annoying
+#FIVE LINK
+#5L block (chest only)
+Show
+        Rarity Normal Magic Rare
+        Class "Body Armour"
+        LinkedSockets = 5
+        AreaLevel < 77
+        SetBackgroundColor 50 0 100
+        SetBorderColor 50 0 100
+        SetFontSize 40
+        PlayAlertSound 1 100
+        MinimapIcon 0 Purple Pentagon
+        PlayEffect Purple Temp
+
+#SIX SOCKETS
+#6s catchall
+Show
+        Sockets = 6
+        SetBackgroundColor 0 115 0
+        SetBorderColor 0 0 0
+        SetTextColor 0 0 0
+        SetFontSize 40
+        PlayAlertSound 3 90
+        MinimapIcon 2 Green Square

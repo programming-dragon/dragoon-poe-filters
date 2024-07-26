@@ -1,0 +1,46 @@
+###################################################################################
+############################ Section 13 - Flasks ##################################
+###################################################################################
+#High ilvl Flasks - Fuck you GGG for doing this bullshit
+#Show
+#       BaseType "Quicksilver Flask"
+#       ItemLevel >= 85
+#       SetBorderColor 200 150 0
+#       MinimapIcon 2 Orange Moon
+#       SetFontSize 35
+
+#hide once you have enough harvest enchanted flasks on stash
+Show
+       BaseType "Divine Life Flask"
+       AreaLevel >= 80
+       SetBorderColor 200 5 5
+       SetFontSize 35
+       MinimapIcon 2 Red UpsideDownHouse
+       PlayAlertSound 14 100
+       DisableDropSound
+
+#hide once done rolling 1st set of flagellant/on hit charges flasks, and pick up i84 flasks instead
+#usually don't need ele res flasks early on so they're commented out for now
+Show
+        BaseType "Granite Flask" "Silver Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Sapphire Flask" "Topaz Flask" "Ruby Flask"
+        ItemLevel >= 72 # change to 80 later
+        MinimapIcon 2 Green Moon
+        PlayAlertSound 14 100
+        SetFontSize 36
+        SetBorderColor 70 170 20
+
+Show
+        BaseType "Granite Flask" "Silver Flask" "Quartz Flask" "Jade Flask" "Sapphire Flask" "Topaz Flask" "Ruby Flask" "Quicksilver Flask" #"Basalt Flask"
+        ItemLevel >= 84
+        MinimapIcon 1 Green Moon
+        PlayAlertSound 14 100
+        SetFontSize 40
+        PlayEffect Green Temp
+        SetBorderColor 70 170 20
+        
+#Show
+#       BaseType "Jade Flask" "Sulphur Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Silver Flask"
+#       ItemLevel >= 84
+#       SetFontSize 25
+#       SetBorderColor 100 150 0
+#       DisableDropSound

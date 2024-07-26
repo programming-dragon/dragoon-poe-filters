@@ -1,0 +1,16 @@
+###################################################################################
+############# Section 1 - Unique override for your unique item needs ##############
+###################################################################################
+#
+#unique override - add the basetypes for the uniques that are critical for your build here to have them always have high tier highlighting and sound
+#
+Show
+       BaseType "Sapphire Ring" "Aventail Helmet" #"Laminated Kite Shield" "Crusader Plate" "Conjurer Boots"
+       Rarity Unique
+       SetTextColor 0 0 0
+       SetBackgroundColor 225 100 0
+       SetBorderColor 255 255 255
+       SetFontSize 42
+       PlayAlertSound 5 150
+       MinimapIcon 0 Yellow Star
+       PlayEffect Yellow
